@@ -1,0 +1,77 @@
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 43px;
+        padding: 16px 188px 14px;
+        background-color: $main-color;   
+    
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+       
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    &__detailsNavWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 236px;
+        max-width: 300px;
+        height: 13px;
+        font-size: 13px;
+        color: #ffffff;
+        background-color: green;
+        span {
+             color: #bff2ff;
+        }
+    }
+
+    
+    .fa-chevron-down {
+         color: fff;
+         font-size: 10px;
+         background-color: grey;
+     }
+
+
+    &__accountInfoWrapper {
+        height: 13px;  
+    }
+
+    
+    &__accountInfoNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        min-width: 357px;
+        height: 13px;
+        background-color: red;
+
+    }
+
+    &__accountInfo {
+        color: #ffffff;
+    }
+    
+
+
+
+
+
+
+
+}
