@@ -5,22 +5,16 @@
         width: 100vw;
         height: 43px;
         padding: 16px 188px 14px;
-        background-color: $main-color;   
-    
+        background-color: $main-color;    
     }
 
     &__nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-
-       
+        align-items: center;   
     }
 
-    summary::-webkit-details-marker {
-        display: none;
-    }
 
     &__detailsNavWrapper {
         display: flex;
@@ -32,25 +26,124 @@
         height: 13px;
         font-size: 13px;
         color: #ffffff;
-        background-color: green;
+        text-shadow: 0.4px 0.4px 1px $darkBlue;
+
         span {
              color: #bff2ff;
+             text-shadow: 0.1px 0.1px 1px $darkBlue;
         }
     }
 
-    
+    &__lang {
+        position: relative;
+    }
+
+
+    &__langNav {
+        color: #ffffff;
+    }
+
     .fa-chevron-down {
          color: fff;
          font-size: 10px;
-         background-color: grey;
+    }
+
+    &__langUlWrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        transition: .5s all;
+        opacity: 0;
+    }
+    &__emptyLangUl {
+        display: block;
+        width: 66px;
+    }
+
+     &__langUl  {
+        display: none;
+        flex-direction: column;
+        padding-top: 10px;
+        line-height: 1.8;
+        opacity: 0;
+
+    }
+
+
+    .header__lang:hover .header__langUlWrapper {
+        opacity: 1;
+    }
+    .header__lang:hover  .header__langUl {
+        display: flex;
+        opacity: 1;
+    }
+  
+
+    &__currencyUlWrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        transition: .5s all;
+        opacity: 0;
+    }
+
+
+    &__currencyUl {
+        display: none;
+        flex-direction: column;
+        padding-top: 10px;
+        line-height: 1.8;
+        opacity: 0;
+    }
+
+
+    &__langLink {
+        color: $lightBlue;
+        text-shadow: 0.4px 0.2px .8px $fifth-color; 
+        letter-spacing: normal;
+         transition: .3s all;
+
+    }
+
+    &__langLink:hover {
+         color: $darkBlue; 
      }
 
 
-    &__accountInfoWrapper {
-        height: 13px;  
+    &__currencyLink {
+        color: $lightBlue;
+        text-shadow: 0.4px 0.2px .8px $fifth-color;  
+        letter-spacing: normal;
+        transition: .3s all;
     }
 
-    
+    &__currencyLink:hover {
+         color: $darkBlue; 
+    }
+
+
+    &__emptyCurrencyUl {
+        display: block;
+        width: 62px;
+    }
+
+
+
+    .header__currency:hover .header__currencyUlWrapper {
+        opacity: 1;
+    }
+    .header__currency:hover  .header__currencyUl{
+        display: flex;
+        opacity: 1;
+    }
+
+
+
+    &__accountInfoWrapper {
+        height: 13px;
+        color: #ffffff;
+    }
+
     &__accountInfoNav {
         display: flex;
         flex-direction: row;
@@ -59,17 +152,27 @@
         font-size: 13px;
         min-width: 357px;
         height: 13px;
-        background-color: red;
-
     }
+
 
     &__accountInfo {
-        color: #ffffff;
+        transition: 0.4s all;
     }
-    
 
 
+    &__accountInfo:hover {
+        color: $lightBlue;
+        text-shadow: 1px 1px 2px $darkBlue; 
+        }
 
+
+   &__accountInfoNav li:not(:last-child):after {
+        padding:15px;
+        content:"|";
+        color: #ffffff;
+        text-shadow: 1px 1px 2px $darkBlue;
+        
+    }
 
 
 
