@@ -1,12 +1,11 @@
 .header {
-    &__wrapper {
         display: flex;
         align-items: center;
         width: 100vw;
         height: 43px;
         padding: 16px 188px 14px;
         background-color: $main-color;    
-    }
+
 
     &__nav {
         display: flex;
@@ -14,7 +13,6 @@
         justify-content: space-between;
         align-items: center;   
     }
-
 
     &__detailsNavWrapper {
         display: flex;
@@ -27,12 +25,12 @@
         font-size: 13px;
         color: #ffffff;
         text-shadow: 0.4px 0.4px 1px $darkBlue;
-
         span {
              color: #bff2ff;
              text-shadow: 0.1px 0.1px 1px $darkBlue;
         }
     }
+
 
     &__lang {
         position: relative;
@@ -98,7 +96,8 @@
 
 
     &__langLink {
-        color: $lightBlue;
+        // color: $lightBlue;
+        color: $titles-color;
         text-shadow: 0.4px 0.2px .8px $fifth-color; 
         letter-spacing: normal;
          transition: .3s all;
@@ -106,19 +105,22 @@
     }
 
     &__langLink:hover {
-         color: $darkBlue; 
+        //  color: $darkBlue; 
+         color: $main-color;
      }
 
 
     &__currencyLink {
-        color: $lightBlue;
+        // color: $lightBlue;
+        color: $titles-color;
         text-shadow: 0.4px 0.2px .8px $fifth-color;  
         letter-spacing: normal;
         transition: .3s all;
     }
 
     &__currencyLink:hover {
-         color: $darkBlue; 
+        //  color: $darkBlue; 
+         color: $main-color;
     }
 
 
@@ -128,7 +130,6 @@
     }
 
 
-
     .header__currency:hover .header__currencyUlWrapper {
         opacity: 1;
     }
@@ -136,8 +137,6 @@
         display: flex;
         opacity: 1;
     }
-
-
 
     &__accountInfoWrapper {
         height: 13px;
@@ -154,14 +153,14 @@
         height: 13px;
     }
 
-
     &__accountInfo {
         transition: 0.4s all;
     }
 
 
     &__accountInfo:hover {
-        color: $lightBlue;
+        color: $second-color;
+        color: $titles-color;
         text-shadow: 1px 1px 2px $darkBlue; 
         }
 
