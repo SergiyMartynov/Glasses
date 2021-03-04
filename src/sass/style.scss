@@ -1,8 +1,11 @@
-@import 'libs/bootstrap-reboot.min';
+// @import 'libs/bootstrap-reboot.min';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 @import 'base/variables';
 
+  html { overflow-x: hidden; }
+  
 * {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -23,8 +26,6 @@
     }
 
 
-
-
 }
 
 
@@ -38,3 +39,4 @@
 
 @import 'blocks/header/header';
 @import 'blocks/navigation/navigation';
+@import 'blocks/carousel/carousel';
