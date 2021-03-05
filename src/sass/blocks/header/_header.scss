@@ -15,6 +15,7 @@
     }
 
     &__detailsNavWrapper {
+        z-index: 3;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -97,7 +98,7 @@
 
     &__langLink {
         // color: $lightBlue;
-        color: $titles-color;
+        color: $main-color; 
         text-shadow: 0.4px 0.2px .8px $fifth-color; 
         letter-spacing: normal;
          transition: .3s all;
@@ -106,13 +107,13 @@
 
     &__langLink:hover {
         //  color: $darkBlue; 
-         color: $main-color;
+         color: $titles-color;
      }
 
 
     &__currencyLink {
         // color: $lightBlue;
-        color: $titles-color;
+        color: $main-color; 
         text-shadow: 0.4px 0.2px .8px $fifth-color;  
         letter-spacing: normal;
         transition: .3s all;
@@ -120,7 +121,7 @@
 
     &__currencyLink:hover {
         //  color: $darkBlue; 
-         color: $main-color;
+         color: $titles-color;
     }
 
 
@@ -137,6 +138,11 @@
         display: flex;
         opacity: 1;
     }
+
+  
+
+
+
 
     &__accountInfoWrapper {
         height: 13px;
