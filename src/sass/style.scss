@@ -29,15 +29,19 @@
 }
 
 
-
 .container {
     width: 1200px;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
+
 @import 'blocks/button';
+@import 'blocks/ProductsStyle';
 @import 'blocks/header/header';
 @import 'blocks/navigation/navigation';
 @import 'blocks/carousel/carousel';
 @import 'blocks/mainProducts/mainProducts';
+@import 'blocks/staffPick/staffPick';
+@import 'blocks/newProducts/newProducts';
+@import 'blocks/shipping/shipping';
+@import 'blocks/info/info';
